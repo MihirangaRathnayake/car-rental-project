@@ -1,0 +1,74 @@
+/* Font Awesome Icons - CDN Import */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css');
+
+/* Icon styling improvements */
+.fas, .far, .fab {
+  margin-right: 8px;
+}
+
+/* Button icons - reduce margin for inline icons */
+button .fas,
+button .far,
+button .fab {
+  margin-right: 6px;
+}
+
+/* Status icons - no margin for inline status icons */
+.car-status .fas,
+.rental-status .fas {
+  margin-right: 4px;
+}
+
+/* Loading spinner animation */
+.fa-spinner {
+  animation: fa-spin 1s infinite linear;
+}
+
+@keyframes fa-spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Make all Font Awesome icons visible and black */
+.fas, .far, .fab, .fa-solid, .fa-regular, .fa-brands,
+i[class*="fa-"] {
+  color: #333 !important;
+  font-weight: 900 !important;
+  display: inline-block;
+}
+
+/* Dashboard stat icons */
+.stat-icon .fas,
+.stat-icon .fa-solid {
+  font-size: 32px;
+  color: #333 !important;
+  margin: 0;
+}
+
+/* Ensure icons are visible in buttons */
+button .fas,
+button .far,
+button .fab,
+button .fa-solid,
+button .fa-regular,
+button .fa-brands {
+  color: inherit !important;
+}
+
+/* Status icons inherit color from parent */
+.car-status .fas,
+.rental-status .fas {
+  color: inherit !important;
+}
+
+/* Icon colors for different contexts */
+.text-primary { color: #007bff !important; }
+.text-success { color: #28a745 !important; }
+.text-warning { color: #ffc107 !important; }
+.text-danger { color: #dc3545 !important; }
+.text-info { color: #17a2b8 !important; }
+.text-secondary { color: #6c757d !important; }

@@ -1,0 +1,170 @@
+.rental-list-container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.rental-list-header {
+    margin-bottom: 30px;
+}
+
+.rental-list-header h2 {
+    color: #333;
+    margin: 0 0 20px 0;
+}
+
+.header-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.add-btn {
+    background-color: #fdcb6e;
+    color: #333;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.add-btn:hover {
+    background-color: #f39c12;
+    color: white;
+}
+
+.status-filter {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.rentals-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    gap: 20px;
+}
+
+.rental-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    background: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.rental-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.rental-card.overdue {
+    border-left: 4px solid #ffc107;
+    background-color: #fff8e1;
+}
+
+.rental-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+.rental-header h3 {
+    margin: 0;
+    color: #333;
+}
+
+.rental-status {
+    padding: 4px 8px;
+    border-radius: 4px;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.rental-details {
+    display: grid;
+    gap: 15px;
+}
+
+.customer-info,
+.car-info,
+.rental-info {
+    padding: 10px;
+    background-color: #f8f9fa;
+    border-radius: 4px;
+}
+
+.customer-info h4,
+.car-info h4,
+.rental-info h4 {
+    margin: 0 0 10px 0;
+    color: #333;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.customer-info p,
+.car-info p,
+.rental-info p {
+    margin: 5px 0;
+    color: #666;
+    font-size: 14px;
+}
+
+.rental-actions {
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 1px solid #eee;
+}
+
+.complete-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.complete-btn:hover {
+    background-color: #218838;
+}
+
+.loading,
+.error {
+    text-align: center;
+    padding: 40px;
+    font-size: 18px;
+}
+
+.error {
+    color: #dc3545;
+}
+
+.retry-btn {
+    margin-left: 10px;
+    padding: 5px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.no-rentals {
+    text-align: center;
+    padding: 40px;
+    color: #666;
+}
